@@ -4,6 +4,7 @@ import Main from '../../components/Main.astro';
 import Layout from '../../layouts/Layout.astro';
 import H1 from '../../components/H1.astro';
 import {Image} from 'astro:assets';
+export const prerender = true;
 
 export const getStaticPaths = async () => {
 	const posts = await getCollection('posts');
